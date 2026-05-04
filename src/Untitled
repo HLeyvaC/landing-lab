@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(13, 202, 240, 0.28), transparent 28%),
+    radial-gradient(circle at 10% 20%, rgba(13, 110, 253, 0.32), transparent 32%),
+    linear-gradient(135deg, #020617 0%, #111827 48%, #0f172a 100%);
+}
