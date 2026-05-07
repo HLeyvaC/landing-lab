@@ -1,0 +1,222 @@
+:host {
+  --lab-navy: #0b1720;
+  --lab-blue: #0965c8;
+  --lab-blue-soft: #eaf4ff;
+  --lab-cyan: #1bb7d8;
+  --lab-cyan-soft: #e8f9fc;
+  --lab-ink: #152532;
+  --lab-muted: #627383;
+  --lab-border: #dbe7f1;
+  --lab-surface: #f5f8fb;
+
+  display: block;
+  color: var(--lab-ink);
+}
+
+.sidebar,
+.navbar-dark,
+.bg-gradient-primary,
+.bg-dark,
+#beneficios {
+  background:
+    radial-gradient(circle at 18% 10%, rgba(27, 183, 216, 0.18), transparent 28%),
+    linear-gradient(160deg, #0b1720 0%, #102b40 58%, #0f3f5f 100%) !important;
+}
+
+.top-menu {
+  box-shadow: 0 10px 28px rgba(8, 22, 34, 0.16);
+  z-index: 1030;
+}
+
+.brand-logo {
+  height: 42px;
+  object-fit: contain;
+  width: auto;
+}
+
+.navbar-brand {
+  font-size: 0.98rem;
+  line-height: 1.1;
+}
+
+.navbar .btn {
+  white-space: nowrap;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+.bg-light {
+  background-color: var(--lab-surface) !important;
+}
+
+.text-danger,
+.fs-2.text-danger,
+.fs-1.text-danger {
+  color: var(--lab-blue) !important;
+}
+
+.bg-danger,
+.badge.bg-danger {
+  background-color: var(--lab-blue) !important;
+}
+
+.btn-danger,
+.btn-primary {
+  --bs-btn-bg: var(--lab-blue);
+  --bs-btn-border-color: var(--lab-blue);
+  --bs-btn-hover-bg: #0752a3;
+  --bs-btn-hover-border-color: #0752a3;
+  --bs-btn-active-bg: #064482;
+  --bs-btn-active-border-color: #064482;
+  color: #fff !important;
+}
+
+.btn-outline-light {
+  --bs-btn-hover-color: var(--lab-navy);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.76) !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff !important;
+}
+
+.nav-link.text-danger {
+  color: #9de7f4 !important;
+}
+
+.border-light {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section::after {
+  background:
+    linear-gradient(90deg, rgba(27, 183, 216, 0.18), rgba(9, 101, 200, 0.08)),
+    url("/assets/logo.png") right 8% center / min(38vw, 430px) no-repeat;
+  bottom: 0;
+  content: "";
+  opacity: 0.3;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 52%;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  border-radius: 999px !important;
+  letter-spacing: 0;
+}
+
+.card,
+.gallery-item,
+.rounded-4 {
+  border-radius: 8px !important;
+}
+
+.card {
+  border: 1px solid var(--lab-border) !important;
+  box-shadow: 0 12px 34px rgba(21, 37, 50, 0.08) !important;
+}
+
+.gallery-item {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.text-secondary {
+  color: var(--lab-muted) !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+#contacto {
+  background: linear-gradient(180deg, var(--lab-cyan-soft), #ffffff) !important;
+  color: var(--lab-ink) !important;
+}
+
+#contacto h2,
+#contacto .form-label {
+  color: var(--lab-ink) !important;
+}
+
+#contacto .lead,
+#contacto .text-white-50 {
+  color: var(--lab-muted) !important;
+}
+
+#contacto form {
+  color: var(--lab-ink);
+}
+
+.form-control,
+.form-select {
+  border-color: var(--lab-border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--lab-cyan);
+  box-shadow: 0 0 0 0.2rem rgba(27, 183, 216, 0.16);
+}
+
+.hero-logo-panel {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  min-height: 320px;
+  padding: 2rem;
+}
+
+.hero-logo-panel img {
+  filter: drop-shadow(0 22px 36px rgba(0, 0, 0, 0.24));
+  max-width: 100%;
+}
+
+.section-copy {
+  max-width: 760px;
+}
+
+.benefit-box {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.step-number {
+  color: var(--lab-blue);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section::after {
+    background-size: 320px;
+    opacity: 0.16;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+}

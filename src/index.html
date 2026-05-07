@@ -1,13 +1,29 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="es">
+<head>  
   <meta charset="utf-8">
-  <title>LandingLab</title>
+  <title>Lab autónomo IA remoto</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
+  <form name="contacto-lab-remoto" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contacto-lab-remoto">
+    <input name="bot-field">
+    <input type="text" name="nombre">
+    <input type="email" name="correo">
+    <input type="tel" name="telefono">
+    <input type="text" name="institucion">
+    <select name="tipo">
+      <option value="docente">Docente</option>
+      <option value="estudiante">Estudiante</option>
+      <option value="institucion">Institucion</option>
+      <option value="empresa">Empresa</option>
+      <option value="otro">Otro</option>
+    </select>
+    <textarea name="mensaje"></textarea>
+  </form>
   <app-root></app-root>
 </body>
 </html>

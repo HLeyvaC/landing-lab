@@ -1,11 +1,9 @@
 <main>
-  <section class="min-vh-100 text-white hero-gradient position-relative overflow-hidden">
-    <nav class="navbar navbar-expand-lg navbar-dark container py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark top-menu sticky-top">
+    <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
-        <span class="bg-info text-dark rounded-3 px-2 py-1">
-          <i class="bi bi-cpu"></i>
-        </span>
-        ControlLab
+        <img src="assets/logo.png" alt="Logo Lab autonomo IA remoto" class="brand-logo">
+        <span>Lab autonomo IA remoto</span>
       </a>
 
       <button
@@ -15,107 +13,116 @@
         data-bs-target="#mainNavbar"
         aria-controls="mainNavbar"
         aria-expanded="false"
-        aria-label="Abrir menú"
+        aria-label="Abrir menu"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div id="mainNavbar" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#modulos">Módulos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#beneficios">Beneficios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#funciona">Cómo funciona</a>
-          </li>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#que-es">Que es</a></li>
+          <li class="nav-item"><a class="nav-link" href="#practicas">Practicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Como funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#para-quien">Para quien</a></li>
         </ul>
 
-        <a href="#contacto" class="btn btn-info text-dark fw-bold ms-lg-4 rounded-pill px-4">
-          Comenzar
+        <a href="#contacto" class="btn btn-danger fw-bold ms-lg-4 rounded-pill px-4">
+          Contacto
         </a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
+  <section class="hero-section bg-gradient-primary text-white py-5">
     <div class="container py-5">
-      <div class="row align-items-center g-5 py-lg-5">
+      <div class="row align-items-center g-5">
         <div class="col-lg-7">
-          <span class="badge rounded-pill text-bg-info text-dark mb-4 px-3 py-2">
-            Laboratorio interactivo en línea
+          <span class="badge bg-danger text-white rounded-pill mb-4 px-3 py-2">
+            Laboratorio remoto de control automatico
           </span>
 
-          <h1 class="display-2 fw-bold lh-1 mb-4">
-            Aprende control automático con simulaciones interactivas
+          <h1 class="display-4 fw-bold lh-1 mb-4">
+            Practicas reales de control desde cualquier lugar
           </h1>
 
-          <p class="lead text-white-50 mb-4">
-            Una plataforma educativa para experimentar con sistemas dinámicos,
-            controladores PID, diseño LQR, respuesta en frecuencia y análisis de
-            sistemas directamente desde el navegador.
+          <p class="lead text-white-50 mb-4 fs-5">
+            Lab autonomo IA remoto es un servicio para instituciones, docentes y empresas que necesitan practicar control PI, logica difusa e inteligencia artificial con hardware ESP32 y plataforma web.
           </p>
 
           <div class="d-flex flex-column flex-sm-row gap-3">
-            <a href="#contacto" class="btn btn-info text-dark fw-bold btn-lg rounded-pill px-4">
-              Probar demo
+            <a href="#contacto" class="btn btn-danger fw-bold btn-lg rounded-pill px-4">
+              Solicitar demostracion
             </a>
 
-            <a href="#modulos" class="btn btn-outline-light btn-lg rounded-pill px-4">
-              Ver módulos
+            <a href="#practicas" class="btn btn-outline-light btn-lg rounded-pill px-4">
+              Ver practicas
             </a>
           </div>
         </div>
 
         <div class="col-lg-5">
-          <div class="card bg-white bg-opacity-10 border border-light border-opacity-25 shadow-lg rounded-5">
+          <div class="hero-logo-panel">
+            <img src="assets/logo.png" alt="Lab autonomo IA remoto">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 mt-5">
+        <div class="col-md-4">
+          <div class="gallery-item bg-white bg-opacity-10 rounded-4 p-4 text-center h-100">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-droplet-fill"></i></div>
+            <h5 class="text-white">Sistema de tanques</h5>
+            <p class="text-white-50 small mb-0">Control de nivel de liquido con practicas guiadas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="gallery-item bg-white bg-opacity-10 rounded-4 p-4 text-center h-100">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-graph-up"></i></div>
+            <h5 class="text-white">Control PI</h5>
+            <p class="text-white-50 small mb-0">Ajuste de parametros y visualizacion de respuesta.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="gallery-item bg-white bg-opacity-10 rounded-4 p-4 text-center h-100">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-cpu"></i></div>
+            <h5 class="text-white">IA y bajo costo</h5>
+            <p class="text-white-50 small mb-0">Tecnologia accesible basada en ESP32 y navegador.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="que-es" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="text-center mx-auto mb-5 section-copy">
+        <span class="badge rounded-pill bg-danger text-white mb-3 px-3 py-2">Que es</span>
+        <h2 class="display-5 fw-bold">Un laboratorio remoto moderno para ensenar control automatico</h2>
+        <p class="lead text-secondary">
+          Permite realizar practicas reales sin depender por completo de un laboratorio fisico tradicional. El alumno entra desde el navegador, interactua con el sistema y observa resultados en graficas.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
             <div class="card-body p-4">
-              <div class="d-flex gap-2 mb-4">
-                <span class="rounded-circle bg-danger d-inline-block" style="width: 12px; height: 12px;"></span>
-                <span class="rounded-circle bg-warning d-inline-block" style="width: 12px; height: 12px;"></span>
-                <span class="rounded-circle bg-success d-inline-block" style="width: 12px; height: 12px;"></span>
-              </div>
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-globe"></i></div>
+              <h3 class="h5 fw-bold">Acceso desde cualquier lugar</h3>
+              <p class="text-secondary mb-0">Facilita clases remotas, hibridas y practicas fuera del horario del laboratorio.</p>
+            </div>
+          </div>
+        </div>
 
-              <div class="bg-dark rounded-4 p-4 mb-4" style="height: 280px;">
-                <div class="h-100 d-flex flex-column justify-content-center gap-4">
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar bg-info" style="width: 88%;"></div>
-                  </div>
-
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar bg-primary" style="width: 68%;"></div>
-                  </div>
-
-                  <div class="progress" style="height: 8px;">
-                    <div class="progress-bar bg-success" style="width: 78%;"></div>
-                  </div>
-
-                  <div class="row g-3 mt-2">
-                    <div class="col-6">
-                      <div class="bg-white bg-opacity-10 rounded-4 p-3">
-                        <small class="text-white-50">Estabilidad</small>
-                        <h4 class="mb-0 text-white">98%</h4>
-                      </div>
-                    </div>
-
-                    <div class="col-6">
-                      <div class="bg-white bg-opacity-10 rounded-4 p-3">
-                        <small class="text-white-50">Overshoot</small>
-                        <h4 class="mb-0 text-white">4.2%</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <strong class="text-white">PID Controller</strong>
-                  <p class="text-white-50 small mb-0">Respuesta en tiempo real</p>
-                </div>
-
-                <span class="badge text-bg-success rounded-pill">Activo</span>
-              </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-lightning-charge"></i></div>
+              <h3 class="h5 fw-bold">Hardware de bajo costo</h3>
+              <p class="text-secondary mb-0">Usa tecnologias accesibles como ESP32 para reducir costos de implementacion.</p>
             </div>
           </div>
         </div>
@@ -123,34 +130,21 @@
     </div>
   </section>
 
-  <section id="modulos" class="py-5 bg-light">
+  <section id="practicas" class="py-5 bg-white">
     <div class="container py-5">
-      <div class="text-center mx-auto mb-5" style="max-width: 760px;">
-        <span class="badge rounded-pill text-bg-primary mb-3 px-3 py-2">
-          Módulos principales
-        </span>
-
-        <h2 class="display-5 fw-bold">
-          Herramientas para practicar teoría de control
-        </h2>
-
-        <p class="lead text-secondary">
-          Diseñado para estudiantes, docentes e investigadores que necesitan visualizar
-          conceptos de forma clara y práctica.
-        </p>
+      <div class="text-center mx-auto mb-5 section-copy">
+        <span class="badge rounded-pill bg-danger text-white mb-3 px-3 py-2">Practicas</span>
+        <h2 class="display-5 fw-bold">Compara diferentes estrategias de control</h2>
+        <p class="lead text-secondary">Los usuarios pueden probar metodos sobre el mismo sistema y observar diferencias de comportamiento.</p>
       </div>
 
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm rounded-4">
             <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h3 class="h5 fw-bold">Modelado dinámico</h3>
-              <p class="text-secondary mb-0">
-                Representa sistemas físicos mediante funciones de transferencia y modelos de estado.
-              </p>
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-graph-up"></i></div>
+              <h3 class="h5 fw-bold">Control PI</h3>
+              <p class="text-secondary mb-0">Implementa control proporcional-integral y observa la respuesta del sistema.</p>
             </div>
           </div>
         </div>
@@ -158,13 +152,9 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm rounded-4">
             <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-sliders"></i>
-              </div>
-              <h3 class="h5 fw-bold">Control PID</h3>
-              <p class="text-secondary mb-0">
-                Ajusta parámetros proporcional, integral y derivativo para observar la respuesta.
-              </p>
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-diagram-3"></i></div>
+              <h3 class="h5 fw-bold">Logica difusa</h3>
+              <p class="text-secondary mb-0">Experimenta con reglas difusas para analizar sistemas no lineales.</p>
             </div>
           </div>
         </div>
@@ -172,55 +162,9 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm rounded-4">
             <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-calculator"></i>
-              </div>
-              <h3 class="h5 fw-bold">Diseño LQR</h3>
-              <p class="text-secondary mb-0">
-                Experimenta con control óptimo y analiza el comportamiento del sistema.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm rounded-4">
-            <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-activity"></i>
-              </div>
-              <h3 class="h5 fw-bold">Respuesta en frecuencia</h3>
-              <p class="text-secondary mb-0">
-                Visualiza estabilidad, señales y comportamiento ante distintas entradas.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm rounded-4">
-            <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-bullseye"></i>
-              </div>
-              <h3 class="h5 fw-bold">Lugar de raíces</h3>
-              <p class="text-secondary mb-0">
-                Analiza polos, ceros y cambios de estabilidad al modificar ganancias.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm rounded-4">
-            <div class="card-body p-4">
-              <div class="fs-2 text-primary mb-3">
-                <i class="bi bi-soundwave"></i>
-              </div>
-              <h3 class="h5 fw-bold">Filtros activos</h3>
-              <p class="text-secondary mb-0">
-                Diseña y prueba filtros con retroalimentación visual inmediata.
-              </p>
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-cpu"></i></div>
+              <h3 class="h5 fw-bold">Red neuronal</h3>
+              <p class="text-secondary mb-0">Aplica inteligencia artificial y compara resultados con otros metodos.</p>
             </div>
           </div>
         </div>
@@ -230,92 +174,70 @@
 
   <section id="beneficios" class="py-5 bg-dark text-white">
     <div class="container py-5">
-      <div class="text-center mx-auto mb-5" style="max-width: 760px;">
-        <span class="badge rounded-pill text-bg-info text-dark mb-3 px-3 py-2">
-          Ventajas
-        </span>
-
-        <h2 class="display-5 fw-bold">
-          Aprendizaje práctico, rápido y accesible
-        </h2>
+      <div class="text-center mx-auto mb-5 section-copy">
+        <span class="badge rounded-pill bg-danger text-white mb-3 px-3 py-2">Beneficios</span>
+        <h2 class="display-5 fw-bold">Ventajas para tu institucion educativa</h2>
       </div>
 
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="p-4 rounded-4 bg-white bg-opacity-10 h-100">
-            <h3 class="h5 fw-bold">Sin instalación</h3>
-            <p class="text-white-50 mb-0">
-              Funciona desde el navegador, ideal para clases, prácticas remotas y demostraciones.
-            </p>
+          <div class="benefit-box p-4 rounded-4 h-100">
+            <h3 class="h5 fw-bold">Menor costo</h3>
+            <p class="text-white-50 mb-0">Reduce la dependencia de equipos fisicos costosos para cada estudiante.</p>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="p-4 rounded-4 bg-white bg-opacity-10 h-100">
-            <h3 class="h5 fw-bold">Visualización inmediata</h3>
-            <p class="text-white-50 mb-0">
-              Los cambios en parámetros se reflejan rápidamente en gráficas y resultados.
-            </p>
+          <div class="benefit-box p-4 rounded-4 h-100">
+            <h3 class="h5 fw-bold">Acceso flexible</h3>
+            <p class="text-white-50 mb-0">Ideal para cursos presenciales, remotos, hibridos y capacitaciones.</p>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="p-4 rounded-4 bg-white bg-opacity-10 h-100">
-            <h3 class="h5 fw-bold">Enfoque educativo</h3>
-            <p class="text-white-50 mb-0">
-              Interfaz clara para reforzar teoría con experimentación práctica.
-            </p>
+          <div class="benefit-box p-4 rounded-4 h-100">
+            <h3 class="h5 fw-bold">Aprendizaje practico</h3>
+            <p class="text-white-50 mb-0">Los cambios se observan mediante graficas y resultados faciles de explicar.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="funciona" class="py-5 bg-white">
+  <section id="como-funciona" class="py-5 bg-light">
     <div class="container py-5">
-      <div class="text-center mx-auto mb-5" style="max-width: 760px;">
-        <span class="badge rounded-pill text-bg-primary mb-3 px-3 py-2">
-          Flujo de uso
-        </span>
-
-        <h2 class="display-5 fw-bold">
-          De la teoría a la simulación en minutos
-        </h2>
+      <div class="text-center mx-auto mb-5 section-copy">
+        <span class="badge rounded-pill bg-danger text-white mb-3 px-3 py-2">Como funciona</span>
+        <h2 class="display-5 fw-bold">Un proceso simple para iniciar</h2>
       </div>
 
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100">
-            <div class="card-body p-4">
-              <span class="fw-bold text-primary">01</span>
-              <h3 class="h5 fw-bold mt-3">Selecciona un módulo</h3>
-              <p class="text-secondary mb-0">
-                Elige PID, LQR, frecuencia, raíces o modelado dinámico.
-              </p>
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="step-number">1</div>
+              <h3 class="h5 fw-bold">Solicita informacion</h3>
+              <p class="text-secondary mb-0">Deja tus datos para conocer disponibilidad, demostracion o cotizacion.</p>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100">
-            <div class="card-body p-4">
-              <span class="fw-bold text-primary">02</span>
-              <h3 class="h5 fw-bold mt-3">Configura parámetros</h3>
-              <p class="text-secondary mb-0">
-                Introduce valores, ganancias o matrices según el experimento.
-              </p>
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="step-number">2</div>
+              <h3 class="h5 fw-bold">Agenda una demo</h3>
+              <p class="text-secondary mb-0">Revisamos el alcance del servicio y las necesidades de tu grupo.</p>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="card border-0 shadow-sm rounded-4 h-100">
-            <div class="card-body p-4">
-              <span class="fw-bold text-primary">03</span>
-              <h3 class="h5 fw-bold mt-3">Analiza resultados</h3>
-              <p class="text-secondary mb-0">
-                Observa gráficas, estabilidad, respuesta temporal y métricas clave.
-              </p>
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="step-number">3</div>
+              <h3 class="h5 fw-bold">Habilita el acceso</h3>
+              <p class="text-secondary mb-0">Los usuarios entran al laboratorio remoto y realizan sus practicas.</p>
             </div>
           </div>
         </div>
@@ -323,24 +245,110 @@
     </div>
   </section>
 
-  <section id="contacto" class="py-5 bg-primary text-white">
-    <div class="container py-5 text-center">
-      <h2 class="display-5 fw-bold mb-3">
-        Construye una experiencia de aprendizaje más interactiva
-      </h2>
+  <section id="para-quien" class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="text-center mx-auto mb-5 section-copy">
+        <span class="badge rounded-pill bg-danger text-white mb-3 px-3 py-2">Para quien</span>
+        <h2 class="display-5 fw-bold">Disenado para educacion y capacitacion</h2>
+      </div>
 
-      <p class="lead text-white-50 mx-auto mb-4" style="max-width: 720px;">
-        Ideal para cursos de ingeniería, laboratorios virtuales y demostraciones académicas.
-      </p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-building"></i></div>
+              <h3 class="h5 fw-bold">Universidades</h3>
+              <p class="text-secondary mb-0">Cursos de ingenieria, control, automatizacion y sistemas.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-        <a href="mailto:contacto@tudominio.com" class="btn btn-light btn-lg rounded-pill fw-bold px-4">
-          Solicitar acceso
-        </a>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-person-badge"></i></div>
+              <h3 class="h5 fw-bold">Docentes</h3>
+              <p class="text-secondary mb-0">Profesores que quieren integrar practicas reales a sus clases.</p>
+            </div>
+          </div>
+        </div>
 
-        <a href="#" class="btn btn-outline-light btn-lg rounded-pill fw-bold px-4">
-          Ver documentación
-        </a>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 text-center">
+              <div class="fs-2 text-danger mb-3"><i class="bi bi-briefcase"></i></div>
+              <h3 class="h5 fw-bold">Empresas</h3>
+              <p class="text-secondary mb-0">Capacitacion tecnica en control de procesos y automatizacion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 bg-danger text-white">
+    <div class="container py-5">
+      <div class="text-center mx-auto mb-5 section-copy">
+        <h2 class="display-5 fw-bold mb-3">Solicita informacion, demostracion o cotizacion</h2>
+        <p class="lead text-white-50 mx-auto mb-4">
+          Dejanos tus datos y nos pondremos en contacto para ofrecerte una demostracion personalizada.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form name="contacto-lab-remoto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card border-0 shadow-lg rounded-4">
+            <input type="hidden" name="form-name" value="contacto-lab-remoto">
+            <p class="d-none"><label>No llenar: <input name="bot-field"></label></p>
+
+            <div class="card-body p-5">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label fw-bold">Nombre completo</label>
+                  <input type="text" class="form-control form-control-lg" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="correo" class="form-label fw-bold">Correo electronico</label>
+                  <input type="email" class="form-control form-control-lg" id="correo" name="correo" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label fw-bold">Telefono</label>
+                  <input type="tel" class="form-control form-control-lg" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="institucion" class="form-label fw-bold">Institucion o empresa</label>
+                  <input type="text" class="form-control form-control-lg" id="institucion" name="institucion" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="tipo" class="form-label fw-bold">Tipo de interesado</label>
+                  <select class="form-select form-select-lg" id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="docente">Docente</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="institucion">Institucion</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="mensaje" class="form-label fw-bold">Mensaje o comentarios</label>
+                  <textarea class="form-control form-control-lg" id="mensaje" name="mensaje" rows="4" placeholder="Cuentanos si deseas una demostracion, cotizacion o informacion para un grupo."></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-danger text-white fw-bold btn-lg rounded-pill px-5">
+                    Enviar solicitud
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>

@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Paleta de colores azul y negro (según logo) */
+:root {
+  --primary-blue: #1F5FD9; /* Azul principal */
+  --dark-blue: #1a4ba8; /* Azul oscuro */
+  --black: #1a1a1a; /* Negro */
+  --dark-gray: #2d3748; /* Gris oscuro */
+  --light-gray: #f8f9fa; /* Fondo claro */
+  --medium-gray: #6c757d; /* Texto secundario */
+}
+
+/* Gradientes en azul y negro */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #1F5FD9 0%, #1a1a1a 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #1a1a1a 0%, #1F5FD9 50%, #1a4ba8 100%);
+}
+
+/* Sidebar en negro con acentos azules */
+.sidebar {
+  background: linear-gradient(180deg, #1a1a1a 0%, #2d3748 100%);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar .nav-link {
+  color: rgba(255,255,255,0.8) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  padding: 12px 0;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+  color: #1F5FD9 !important;
+  background-color: rgba(31, 95, 217, 0.1);
+  border-left: 3px solid #1F5FD9;
+  padding-left: 12px;
+}
+
+.sidebar .nav-link.active {
+  color: #1F5FD9 !important;
+  background-color: rgba(31, 95, 217, 0.1);
+  border-left: 3px solid #1F5FD9;
+}
+
+/* Galería con colores azul y negro */
+.gallery-item {
+  background: rgba(255,255,255,0.95);
+  border: 2px solid #1F5FD9;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(31, 95, 217, 0.4) !important;
+  border-color: #1a4ba8;
+  background: #ffffff;
+}
+
+/* Botones en azul */
+.btn-danger {
+  background-color: #1F5FD9;
+  border-color: #1F5FD9;
+}
+
+.btn-danger:hover {
+  background-color: #1a4ba8;
+  border-color: #1a4ba8;
+}
+
+.btn-outline-light {
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  background-color: transparent;
+}
+
+.btn-outline-light:hover {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Navbar móvil en negro */
+.navbar-dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%) !important;
+}
+
+/* Textos y elementos */
+.text-primary {
+  color: #1F5FD9 !important;
+}
+
+.text-danger {
+  color: #1F5FD9 !important;
+}
+
+.bg-danger {
+  background-color: #1F5FD9 !important;
+}
+
+.badge {
+  background-color: #1F5FD9 !important;
+  color: #ffffff !important;
+}
+
+/* Fondos de secciones */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+/* Enlaces */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1F5FD9 !important;
+}
